@@ -6,14 +6,18 @@ import com.stockhandler.model.Stock;
 
 public class Main {
 
+    public static final String MSFT = "MSFT";
+    public static final String AAPL = "AAPL";
+    public static final String ORCL = "ORCL";
+
     public static void main(String[] args) {
         var portfolio = new Portfolio();
 
-        portfolio.add(position("MSFT", 1, 260.0));
-        portfolio.add(position("MSFT", 2, 250.0));
-        portfolio.add(position("AAPL", 5, 90.0));
-        portfolio.add(position("AAPL", 10, 80.0));
-        portfolio.add(position("ORCL", 100, 80.0));
+        portfolio.add(position(MSFT, 1, 260.0));
+        portfolio.add(position(MSFT, 2, 250.0));
+        portfolio.add(position(AAPL, 5, 90.0));
+        portfolio.add(position(AAPL, 10, 80.0));
+        portfolio.add(position(ORCL, 100, 80.0));
 
         portfolio.print();
     }
